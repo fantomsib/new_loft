@@ -1,0 +1,143 @@
+.bars{
+    background-color: #f8faf9;
+    align-items: center;
+}
+
+.bars--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bars__slider__left {
+    position: absolute;
+    left: 0.5rem;
+    z-index: 5;
+}
+
+.bars__slider__right {
+    position: absolute;
+    right: 2.5rem;
+}
+
+.bars__elips {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+
+    .elips__gris {
+        position: absolute;
+        display: flex;
+        top: 4.12rem;
+        left: -0.62rem;
+        max-width: 100%;
+    }
+
+    .elips__bleu {
+        z-index: 2;
+        max-width: 100%;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: flex;
+        background: url("../img/bars.png") center center no-repeat;
+        top: -4.68rem;
+        left: -0.37rem;
+        width: 22.68rem;
+        height: 23.93rem;
+        z-index: 3;
+        max-width: 100%;
+    }
+
+    &::before {
+        position: absolute;
+        content: "";
+        display: flex;
+        background: url("../img/bars_leaves.png") center center no-repeat;
+        top: 0;
+        left: -3.56rem;
+        width: 28.87rem;
+        height: 20.37rem;
+      
+        z-index: 4;
+    }
+}
+
+.bar__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.bars--title {
+    font-size: 2.25rem;
+    margin-bottom: 2.56rem;
+    width: 22rem;
+}
+
+.bars__composition {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 2.06rem;
+}
+
+.bars__description {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 3.18rem;
+    width: 21.12rem;
+    display: flex;
+}
+
+.bars__energy {
+    display: flex;
+    margin-bottom: 2.18rem;
+
+    .energy__items {
+        display: flex;
+        flex-direction: column;
+        margin-right: 3.43rem;
+    }
+
+    .energy__title {
+        margin-bottom: 0.56rem;
+        color: #333333;
+        font-family: "Alegreya Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
+    }
+
+    .energy__info {
+        color: #333333;
+        font-family: "Alegreya Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 43.75rem;
+    }
+}
+
+.bars__price {
+    display: flex;
+
+    .bars__price__rub {
+        color: #0d0d0d;
+        font-family: "Alegreya Sans";
+        font-size: 3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-weight: 18.75rem;
+        margin-right: 1.93rem;
+    }
+
+    .bars__price__btn {
+        @include btn;
+    }
+}

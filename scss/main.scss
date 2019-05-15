@@ -1,0 +1,71 @@
+// нормалайз
+@import "./_misk/_normalazie";
+
+//ширифты
+@import "./_misk/_font";
+
+//переменные
+@import "./_misk/var";
+
+//миксины
+@import "./_misk/mixin";
+
+//svg why
+@import "./_svg/svg-why";
+
+//svg content
+@import "./_svg/svg-content";
+
+//svg footer
+@import "./_svg/svg-footer";
+
+//основные настройки , общие
+@import "./_misk/_config";
+
+//фиксированное меню точки 
+@import "./_misk/_section/_sidebar-fixe";
+
+//секция главная "welcome"
+@import "../scss/_misk/_section/welcome";
+
+//header
+@import "./_misk/_section/_header";
+
+//меню 
+@import "./_misk/_section/nav";
+
+//блок content
+@import "./_misk/_section/content";
+
+//секция why "почему CHOCCO?"
+@import "./_misk/_section/why";
+
+//секция bars "батончикик морские водрасли"
+@import "./_misk/_section/_bars";
+
+//секция team "Команда"
+@import "./_misk/_section/_team";
+
+//секция menu 
+@import "./_misk/_section/_menu";
+
+//секция "аккардион  меню"
+@import "./_misk/_section/_menu-accordion";
+
+//секция reviews "отзывы"
+@import "./_misk/_section/_reviews";
+
+//секция work "как мы работает"
+@import "./_misk/_section/_work";
+
+//секция delivery "закажите доставаку"
+@import "./_misk/_section/_delivery";
+
+//секция map "карта"
+@import "./_misk/_section/_map";
+
+//footer
+@import "./_misk/_section/_footer";
+
+@import "./_misk/_media/_media";
+

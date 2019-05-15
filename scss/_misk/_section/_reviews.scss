@@ -1,0 +1,151 @@
+.reviews {
+    min-height: 50.5rem;
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/reviews__berry2.png") center center no-repeat;
+        bottom: -7.56rem;
+        left: 0px;
+        width: 9.62rem;
+        height: 13.75rem;
+        z-index: 2;
+        max-width: 100%;
+    }
+
+    &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/reviews__bag2.png") center center no-repeat;
+        bottom: -12.06rem;
+        left: 0px;
+        width: 8.37rem;
+        height: 26.37rem;
+        z-index: 2;
+        max-width: 100%;
+    }
+
+    .reviewes__bag {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: 10.81rem;
+        height: 6.18rem;
+    }
+}
+
+
+.reviews--container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.reviews--title {
+    margin-bottom: 3.68rem;
+}
+
+.reviews__commit {
+    display: flex;
+    width: 58.75rem;
+    height: 21.93rem;
+    background-color: #f8faf9;
+    align-items: center;
+    padding-left: 2.81rem;
+    position: relative;
+    margin-bottom: 3.12rem;
+
+    &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/reviews__bag.png") center center no-repeat;
+        top: 0;
+        right: 0;
+        width: 7.93rem;
+        height: 10.43rem;
+        max-width: 100%;
+    }
+}
+
+.commit__items {
+    display: flex;
+}
+
+.commit__personne {
+    margin-right: 1.12rem;
+}
+
+.commit__photo {
+    width: 15.87rem;
+    height: 16.25rem;
+    max-width: 100%;
+}
+
+.commit__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.comit__title {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 500;
+    font-size: 1.87rem;
+    margin-bottom: 1.81rem;
+}
+
+.comit__descrip {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+    width: 27.06rem;
+    line-height: 1;
+}
+
+.comit__name {
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-weight: 31.25rem;
+}
+
+.commit__items-2, .commit__items-3 {
+    display: none;
+    overflow: hidden;
+}
+
+
+.reviews__list {
+    display: flex;
+    align-items: center;
+}
+
+.reviews__items {
+    margin-right: 2.5rem;
+
+    .reviews__icon {
+        display: flex;
+        width: 5.87rem;
+        height: 5.87rem;
+        border-radius: 50%;
+        background-color: #0f5a47;
+        max-width: 100%;
+    }
+}
+
+.reviews__items-active,
+.reviews__items:active {
+    border: 0.5rem solid #0f5a47;
+    border-radius: 50%;
+    background-color: #0f5a47;
+}

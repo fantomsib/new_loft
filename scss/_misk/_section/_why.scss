@@ -1,0 +1,117 @@
+.why{
+    background-color: $white;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__bag.png") center center no-repeat;
+        bottom: 15.31rem;
+        left: 0;
+        width: 11.93rem;
+        height: 19.62rem;
+        max-width: 100%;
+    }
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__berry.png") center center no-repeat;
+        bottom: -6.25rem;
+        left: 0;
+        width: 10.06rem;
+        height: 19.68rem;
+        max-width: 100%;
+        z-index: 3;
+    }
+}
+
+
+.why--container {
+    position: relative;
+    justify-content: center;
+}
+
+.why--title {
+    margin-bottom: 23px;
+}
+
+.why__txt {
+    font-family: "Alegreya Sans";
+    margin-bottom: 56.96px;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: 25.375rem;
+
+}
+
+.why__list {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    /*width: 944.96px;*/
+    justify-content: space-between;
+}
+
+.why__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+  
+ 
+
+    span {
+        font-family: 'alegreya_sans_extraboldRg';
+        font-size: 1.68rem;
+        color: black;
+        margin-bottom: 1.56rem;
+    }
+
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 18.75rem;
+        text-align: center;
+        width: 17.25rem;
+    }
+
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__after.png") center center no-repeat;
+        width: 4.18rem;
+        height: 1.31rem;
+        right: -3.87rem;
+        top: 3.25rem;
+        max-width: 100%;
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.why__icon {
+    display: flex;
+    width: 125px;
+    height: 125px;
+    background-color: #f2f5f4;
+    
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 2.18rem;
+
+    .why__img {
+       
+        max-width: 100%;
+    }
+}

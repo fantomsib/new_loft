@@ -1,0 +1,116 @@
+.menu__list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 3;
+
+}
+
+.menu__items {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+
+}
+
+.menu__items-active,
+.menu__items:active .menu__block {
+    height: 100vh;
+    transition: 0.5s;
+    width: 630px;
+
+  
+}
+
+
+
+
+
+.menu__link {
+    position: relative;
+    display: flex;
+    width: 100px;
+    height: 100vh;
+    z-index: 2;
+
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: flex;
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .40;
+    }
+
+}
+
+.menu__link-active {
+    background: url("../img/menu__coco.jpg") center center no-repeat;
+    background-size: cover;
+
+
+}
+
+.menu__link-2 {
+    background: url("../img/menu__orang.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu__link-3 {
+    background: url("../img/menu__berry.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu__block {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.75;
+    width: 0;
+    overflow: hidden;
+    display: flex;
+
+
+
+}
+
+.menu__block-active {
+    width: 530px;
+
+
+}
+
+
+.menu__text {
+    display: flex;
+    width: 376px;
+    height: 160px;
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.97px;
+    padding-top: 55px;
+    padding-left: 30px;
+}
+
+.menu__descrip {
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    top: 50.4375rem;
+    left: 1.8125rem;
+    transform: rotate(-90deg);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 3rem;
+    font-weight: 500;
+    width: 2.5625rem;
+    z-index: 2;
+}

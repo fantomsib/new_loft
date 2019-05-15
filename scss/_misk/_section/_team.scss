@@ -1,0 +1,164 @@
+.team {
+    background-color: $white;
+    align-items: center;
+    min-height: 47.87rem;
+
+    &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/team_bagr.png") center center no-repeat;
+        display: flex;
+        width: 12.25rem;
+        height: 36.12rem;
+        top: -15.06rem;
+        right: 0;
+        max-width: 100%;
+    }
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/bars_berry.png") center center no-repeat;
+        display: flex;
+        width: 8.43rem;
+        height: 7rem;
+        top: -4.18rem;
+        right: 0;
+        max-width: 100%;
+    }
+}
+
+.team--container {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.team--title {
+    display: flex;
+    position: absolute;
+    top: 100px;
+   
+}
+
+.team__list {
+    display: flex;
+    flex-direction: row;
+    //height: 25.31rem;
+    position: absolute;
+    z-index: 3;
+}
+
+.team__items-alla {
+    align-self: flex-end;
+}
+
+.team__items-mila {
+    align-self: flex-end;
+}
+
+.team__items-active {
+    align-self: flex-start;
+}
+
+.team__items-boris {
+    align-self: flex-start;
+}
+
+.team__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.team__photo {
+    width: 14rem;
+    height: 18.06rem;
+    margin-bottom: 1.56rem;
+    max-width: 100%;
+}
+
+.team__name {
+    color: #323232;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+
+
+    &::after {
+        content: "";
+        display: flex;
+        background: url("../img/Polygon.png") center center no-repeat;
+        width: 0.56rem;
+        height: 0.43rem;
+        margin-left: 0.31rem;
+    }
+}
+
+.team__name-motrsov {
+    margin-bottom: 0.81rem;
+
+}
+
+.team__name-motrsov::after {
+    content: "";
+    display: flex;
+    background: url("../img/Polygon_top.png") center center no-repeat;
+    width: 0.56rem;
+    height: 0.43rem;
+    margin-left: 0.31rem;
+}
+
+.team__prof {
+    color: #281e1e;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    margin-bottom: 0.37rem;
+    display: flex;
+}
+
+.team__descrip {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    width: 14rem;
+    color: #666666;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    font-weight: 18.75rem;
+    text-align: center;
+}
+
+
+.team__items:active .team__name {
+
+    &::after {
+        content: "";
+        display: flex;
+        background: url("../img/Polygon_top.png") center center no-repeat;
+        width: 0.56rem;
+        height: 0.43rem;
+        margin-left: 0.31rem;
+    }
+}
+
+
+.team__items:active .team__descrip {
+    height: 80px;
+    transition: 0.4s;
+    width: 14rem;
+}
+
+.team__descrip-active {
+    height: 80px;
+
+}

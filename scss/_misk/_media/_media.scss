@@ -1,0 +1,78 @@
+@media screen and (max-width: 768px) {
+    .section {
+        min-height: 1025px;
+    }
+
+    .welcome--container {
+        width: 771px;
+        padding-left: 0;
+        padding-right: 25px;
+        padding-top: 30px;
+        padding-left: 26px;
+        margin-left: 0;
+        align-items: center;
+    }
+
+    .welcome {
+        background-color: #61c4d9;
+
+        &::before {
+            content: "";
+            right: 0;
+            height: 635px;
+            top: 0;
+            left: 238px;
+            display: flex;
+            width: 32rem;
+            height: 40.5rem;
+            max-width: 100%;
+        }
+
+        &::after {
+            content: "";
+            background: url("../img/berry__786-welcome.png");
+            position: absolute;
+            top: 218px;
+            left: 208px;
+            right: 0;
+            display: flex;
+            width: 388px;
+            height: 272.92px;
+            z-index: 3;
+
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        flex: 0;
+        justify-content: center;
+    }
+
+    .content__barre {
+        width: 403px;
+        height: 419px;
+        margin-bottom: 47px;
+    }
+
+    .content__left {
+        align-items: center;
+    }
+
+    .content--title,
+    .content__text {
+        text-align: center;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .nav,
+    .header__phone {
+        display: none;
+    }
+
+}

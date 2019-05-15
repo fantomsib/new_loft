@@ -1,0 +1,199 @@
+.delivery {
+    background: url("../img/delivery__bag.jpg") center center no-repeat;
+    background-size: cover;
+    min-height: 41.875rem;
+
+    &::before {
+        content: "";
+        background: url("../img/delivery__bag.png") center center no-repeat;
+        position: absolute;
+        bottom: 108px;
+        right: 0;
+        display: flex;
+        width: 8.4375rem;
+        height: 11.75rem;
+    }
+
+    &::after {
+        content: "";
+        background: url("../img/berry__deliv.png") center center no-repeat;
+        position: absolute;
+        bottom: 57px;
+        left: 12px;
+        display: flex;
+        width: 3.9375rem;
+        height: 3.625rem;
+
+
+    }
+}
+
+.delivery--coontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.delivery--title {
+    color: #0f5a47;
+    margin-bottom: 3.4375rem;
+}
+
+.form {
+    display: flex;
+    width: 59.375rem;
+    justify-content: space-between;
+
+}
+
+.form__left {
+    display: flex;
+    flex-direction: column;
+    width: 28.9375rem;
+
+}
+
+.left__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .input__top {
+        width: 13.75rem;
+        height: $heightInput;
+        background-color: #ffffff;
+        @include input;
+    }
+}
+
+.left__top__name,
+.left__top__phone {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.input__text {
+    color: #0f5a47;
+    font-family: "Alegreya Sans";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.8781rem;
+}
+
+.form__center {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    .input__center {
+        height: $heightInput;
+        @include input;
+    }
+}
+
+.form__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    .bottom__items {
+        display: flex;
+        flex-direction: column;
+        width: 6.25rem;
+    }
+
+    .input__bottom {
+        height: $heightInput;
+        @include input;
+    }
+}
+
+.form__right {
+    display: flex;
+    flex-direction: column;
+}
+
+.right__texterea {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+
+    .textarea {
+        width: 28.75rem;
+        height: 11.25rem;
+        background-color: #ffffff;
+        resize: none;
+        @include input;
+    }
+}
+
+.right__checkbox {
+    display: flex;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 23px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.chekbox__input {
+    display: none;
+    align-items: center;
+
+    &:checked+.box {
+        &::after {
+            background-color: #0f5a47;
+            border-radius: 50%;
+        }
+    }
+}
+
+.box {
+    display: block;
+    position: relative;
+    width: 25px;
+    height: 26px;
+    background-color: #ffffff;
+    margin-right: 10px;
+    border-radius: 50%;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        right: 6px;
+        bottom: 6px;
+    }
+}
+
+.box-carre {
+    border-radius: 0;
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 9px;
+        left: 8px;
+        right: 8px;
+        bottom: 6px;
+    }
+}
+
+.chekbox__input-carre {
+    &:checked+.box-carre {
+        &::after {
+            background: url("../img/gal.png");
+            width: 11px;
+            height: 9px;
+        }
+    }
+}

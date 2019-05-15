@@ -1,0 +1,30 @@
+.social__icon {
+    fill: #b2b2b2;
+    stroke: #b2b2b2;
+
+    &:hover {
+        fill: #000000;
+    }
+}
+
+.social__icon-vk {
+    width: 23px;
+    height: 13px;
+}
+
+.social__icon-fb {
+    width: 20px;
+    height: 20px;
+}
+
+.social__icon-inst {
+    width: 20px;
+    height: 20px;
+}
+
+.social__icon-twit {
+    width: 20px;
+    height: 16px;
+    fill: #b2b2b2;
+    stroke: #b2b2b2;
+}
