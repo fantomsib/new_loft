@@ -6,6 +6,9 @@
     top: 29%;
     z-index: 10;
 
+    @include tablets {
+        display: none;
+    }
 }
 
 .sidebar__items {
@@ -51,7 +54,7 @@
 
 }
 
-.sidebar__items-active .sidebar__link::before,
+.sidebar__items--active .sidebar__link::before,
 .sidebar__link:hover::before {
 
 
@@ -60,12 +63,3 @@
 
     opacity: 1;
 }
-
-/*.sidebar__link-active,
-.sidebar__link:active::before {
-    border: solid 0.06rem #ffffff;
-    display: flex;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
-}*/

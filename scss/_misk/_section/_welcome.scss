@@ -1,6 +1,11 @@
 .welcome {
     background-color: #61c4d9;
- 
+
+    @include tablets {
+        justify-content: center;
+
+    }
+
     &::before {
         content: "";
         background: url("../img/iz.png") center center no-repeat;
@@ -8,9 +13,27 @@
         bottom: 0;
         right: 0;
         display: flex;
-        width: 512px;
-        height: 648px;
+        width: 32rem;
+        height: 40.5rem;
         max-width: 100%;
+
+        @include tablets {
+            content: "";
+            right: 0;
+            height: 39.6875rem;
+            top: -12px;
+            right: 0px;
+            display: flex;
+            width: 32rem;
+            height: 40.5rem;
+            max-width: 100%;
+        }
+
+        @include phones {
+            background: url("../img/list-welcome-480.png") center center no-repeat;
+            right: 0;
+            top: 0;
+        }
     }
 
     &::after {
@@ -20,40 +43,100 @@
         bottom: -1.87rem;
         right: 6.12rem;
         display: flex;
-        width: 387px;
-        height: 286px;
-        z-index: 3;
-        max-width: 100%;
+        width: 24.1875rem;
+        height: 17.875rem;
+        z-index: 4;
+
+        @include tablets {
+            content: "";
+            background: url("../img/berry__786-welcome.png") no-repeat;
+            position: absolute;
+            top: 314px;
+            left: 199px;
+            width: 28.1875rem;
+            height: 19.875rem;
+        }
+
+        @include phones {
+            left: 2.3125rem;
+            top: 12.25rem;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+
+        }
+
+        @include iphone {
+            left: 0.3125rem;
+            top: 3.25rem;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
     }
 }
 
 .welcome--container {
     padding-top: 1.5rem;
-    padding-bottom: 70px;
+    padding-bottom: 4.375rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  /*&::before {
-        content: "";
-        background: url("../img/list.png");
-        position: absolute;
-        top: 36.68rem;
-        right: 1.3rem;
-        display: flex;
-        width: 1056px;
-        height: 353px;
-        z-index: 3;
-     
-    }*/
+
+
+    @include phones {
+        justify-content: center;
+
+        padding-bottom: 1rem;
+        padding-top: 0.4rem;
+
+    }
 }
 
 .welcome__bag {
     background: url("../img/list.png") center center no-repeat;
     position: absolute;
-    top: -301px;
-    right: -61px;
+    bottom: -3.1875rem;
+    right: -2.8125rem;
     display: flex;
-    width: 1056px;
-    height: 353px;
+    width: 66rem;
+    height: 22.0625rem;
     z-index: 3;
+
+    @include tablets {
+        background: url("../img/list-welcome-768.png") no-repeat center center;
+        top: 21.1875rem;
+        left: 0.6875rem;
+        z-index: 0;
+    }
+
+    @include phones {
+        left: -10.3125rem;
+        top: 15.0625rem;
+    }
+
+    @include iphone {
+        left: -21.3125rem;
+        top: 2.0625rem;
+        z-index: 0;
+    }
+}
+
+
+.welcome__bag-2 {
+    @include tablets {
+        background: url("../img/list-tablets-welcome.png") center center no-repeat;
+        position: absolute;
+        top: 29.75rem;
+        left: 11.6875rem;
+        display: flex;
+        width: 47px;
+        height: 90px;
+
+    }
+
+    @include phones {
+        top: 10.75rem;
+        left: 1.6875rem;
+    }
 }

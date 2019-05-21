@@ -7,6 +7,12 @@
     width: 100%;
     justify-content: center;
     align-items: center;
+
+    @include phones {
+        height: 9.625rem;
+
+    }
+
 }
 
 .footer__row {
@@ -19,6 +25,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    @include phones {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
 }
 
 .footer__address {
@@ -27,7 +39,11 @@
     font-size: 1.3125rem;
     font-weight: 400;
     line-height: 1.4888rem;
-    margin-bottom: 4px;
+    margin-bottom: 0.25rem;
+
+    @include phones {
+        margin-bottom: 0.5rem;
+    }
 }
 
 .footer__number {
@@ -44,10 +60,10 @@
 }
 
 .footer__tel {
-    width: 12px;
-    height: 11px;
+    width: 0.75rem;
+    height: 0.6875rem;
     fill: #0f5a47;
-    margin-right: 7px;
+    margin-right: 0.4375rem;
 }
 
 /*правая секция футора*/
@@ -55,6 +71,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+    }
 }
 
 .footer__social {
@@ -67,6 +88,10 @@
 .social {
     display: inline;
     margin-right: 1.25rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
 
 }
 

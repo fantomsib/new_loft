@@ -1,6 +1,6 @@
-.work{
+.work {
     background-color: #f8faf9;
-    min-height: 727px;
+    min-height: 45.4375rem;
 
     &::before {
         content: "";
@@ -12,6 +12,16 @@
         bottom: -8rem;
         right: 0;
         z-index: 2;
+
+        @include tablets {
+            background: url("../img/delivery-768-berry.png") center center no-repeat;
+            right: -4.875rem;
+        }
+
+        @include phones {
+            bottom: -8rem;
+            right: -79px;
+        }
     }
 }
 
@@ -93,7 +103,7 @@
     }
 
     .control__list-playstatus {
-        margin-right: 45px;
+        margin-right: 2.8125rem;
 
         &::after {
             content: "";

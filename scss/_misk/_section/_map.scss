@@ -1,10 +1,18 @@
-.map{
+.map {
     background: url("../img/map.jpg") center center no-repeat;
     background-size: cover;
     min-height: 43.75rem;
 }
 
 .map--coontainer {
- display: flex;
- flex-direction: row;
+    display: flex;
+    flex-direction: row;
+
+    @include phones {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        justify-content: center;
+    }
 }

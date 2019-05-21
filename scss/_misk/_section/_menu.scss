@@ -1,9 +1,9 @@
 .menu {
     background: url("../img/menu-bag.jpg") center center no-repeat;
     background-size: cover;
-   
- 
-&::before {
+
+
+    &::before {
         position: absolute;
         content: "";
         display: flex;
@@ -25,13 +25,27 @@
         top: -4.375rem;
         left: 1.125rem;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/menu-berry-768.png") center center no-repeat;
+        }
+
+        @include phones {
+            display: none;
+        }
     }
 }
 
 .menu--title {
     color: $white;
     display: flex;
-    padding-top: 105px;
-    padding-left: 79px;
+    padding-top: 6.5625rem;
+    padding-left: 4.9375rem;
     z-index: 2;
+
+    @include phones {
+        padding-left: 0.4rem;
+        padding-top: 4rem;
+        font-size: 2rem;
+    }
 }

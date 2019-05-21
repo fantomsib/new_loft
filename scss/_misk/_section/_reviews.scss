@@ -1,5 +1,5 @@
 .reviews {
-    min-height: 50.5rem;
+
 
     &::after {
         content: "";
@@ -7,11 +7,16 @@
         position: absolute;
         background: url("../img/reviews__berry2.png") center center no-repeat;
         bottom: -7.56rem;
-        left: 0px;
+        left: 0rem;
         width: 9.62rem;
         height: 13.75rem;
         z-index: 2;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/rewievs-768-berry.png") center center no-repeat;
+            left: -2rem;
+        }
     }
 
     &::before {
@@ -20,11 +25,17 @@
         position: absolute;
         background: url("../img/reviews__bag2.png") center center no-repeat;
         bottom: -12.06rem;
-        left: 0px;
+        left: 0rem;
         width: 8.37rem;
         height: 26.37rem;
         z-index: 2;
         max-width: 100%;
+
+        @include tablets {
+            background: url("../img/rewievs-768-bag.png") center center no-repeat;
+            left: -2rem;
+        }
+
     }
 
     .reviewes__bag {
@@ -32,9 +43,15 @@
         position: absolute;
         top: 1rem;
         right: 0;
-        width: 10.81rem;
-        height: 6.18rem;
+
+        // width: 10.81rem;
+        // height: 6.18rem;
+        @include phones {
+            display: none;
+        }
     }
+
+
 }
 
 
@@ -43,11 +60,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include phones {
+        justify-content: space-around;
+    }
+
+
 }
 
 
 .reviews--title {
     margin-bottom: 3.68rem;
+
+    @include phones {
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem;
+    }
 }
 
 .reviews__commit {
@@ -70,26 +98,76 @@
         width: 7.93rem;
         height: 10.43rem;
         max-width: 100%;
+
+        @include phones {
+            display: none;
+        }
+    }
+
+    @include tablets {
+        width: 28.75rem;
+        height: 37.5rem;
+        padding: 0;
+    }
+
+    @include phones {
+        width: 100%;
+        height: 28rem;
+        margin-bottom: 0rem;
     }
 }
 
 .commit__items {
     display: flex;
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+
+    }
+}
+
+.commit__items-1 {
+    @include tablets {
+        display: none;
+    }
 }
 
 .commit__personne {
     margin-right: 1.12rem;
+
+    @include tablets {
+        margin: 0;
+    }
 }
 
 .commit__photo {
     width: 15.87rem;
     height: 16.25rem;
     max-width: 100%;
+
+    @include tablets {
+        width: 12.75rem;
+        height: 13.0625rem;
+    }
+
+    @include phones {
+        width: 11.75rem;
+        height: 12.0625rem;
+    }
 }
 
 .commit__text {
     display: flex;
     flex-direction: column;
+
+    @include phones {
+        align-items: center;
+    }
+
+
 }
 
 .comit__title {
@@ -99,6 +177,16 @@
     font-weight: 500;
     font-size: 1.87rem;
     margin-bottom: 1.81rem;
+
+    @include tablets {
+        padding: 0 15%
+    }
+
+    @include phones {
+        margin-bottom: 0.4rem;
+        font-size: 1.8rem;
+        padding: 0 23%
+    }
 }
 
 .comit__descrip {
@@ -109,6 +197,14 @@
     margin-bottom: 2rem;
     width: 27.06rem;
     line-height: 1;
+
+    @include tablets {
+        padding: 0 3%
+    }
+
+    @include phones {
+        margin-bottom: 0.5rem
+    }
 }
 
 .comit__name {
@@ -119,7 +215,16 @@
     font-weight: 31.25rem;
 }
 
-.commit__items-2, .commit__items-3 {
+.commit__items-2 {
+    display: none;
+    overflow: hidden;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.commit__items-3 {
     display: none;
     overflow: hidden;
 }
@@ -128,10 +233,22 @@
 .reviews__list {
     display: flex;
     align-items: center;
+
+    @include phones {
+        z-index: 5;
+    }
 }
 
 .reviews__items {
     margin-right: 2.5rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include phones {
+        margin-right: 0.5rem;
+    }
 
     .reviews__icon {
         display: flex;
@@ -140,12 +257,33 @@
         border-radius: 50%;
         background-color: #0f5a47;
         max-width: 100%;
+
+        @include phones {
+            width: 4.87rem;
+            height: 4.87rem;
+        }
     }
+
 }
 
-.reviews__items-active,
+.reviews__items--active,
 .reviews__items:active {
     border: 0.5rem solid #0f5a47;
     border-radius: 50%;
     background-color: #0f5a47;
+
+    @include tablets {
+        border: 0;
+
+    }
+}
+
+.reviews__items-768,
+.reviews__items:active {
+    @include tablets {
+
+        border: 0.5rem solid #0f5a47;
+        border-radius: 50%;
+        background-color: #0f5a47;
+    }
 }

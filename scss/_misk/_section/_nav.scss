@@ -1,19 +1,23 @@
 .nav__list {
     display: flex;
+
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__items {
-    margin-right: 29px;
+    margin-right: 1.8125rem;
 
     &:last-child {
-        margin-right: 0px;
+        margin-right: 0rem;
     }
 }
 
 .nav__link {
     color: $colorWhiteText;
     font-family: "Alegreya Sans";
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
