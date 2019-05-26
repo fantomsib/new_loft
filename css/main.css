@@ -837,6 +837,8 @@ h6 {
   width: 1.625rem;
   height: 1.625rem;
   display: none; }
+  .nav__hamburger:hover {
+    opacity: .55; }
   @media screen and (max-width: 768px) {
     .nav__hamburger {
       display: -webkit-box;
@@ -2982,3 +2984,53 @@ h6 {
 
 .vvk:hover {
   fill: #010101; }
+
+.navigation__tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #2f3234;
+  opacity: 0.99;
+  z-index: 10;
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.navigation__items {
+  list-style: none; }
+
+.navigation__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Alegreya Sans";
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 4.5rem; }
+  .navigation__link:hover {
+    opacity: 0.55; }
+
+.navigation__croix {
+  width: 20px;
+  height: 20px;
+  opacity: 0.7;
+  fill: #ffffff; }
+
+.navigation__closed {
+  position: absolute;
+  right: 1.625rem;
+  top: 2rem; }
+  .navigation__closed:hover {
+    opacity: 0.55; }

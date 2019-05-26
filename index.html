@@ -5,12 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./css/main.css">
+
     <title>CHOCCO</title>
 </head>
 
 <body>
-    <div class="wrapper">
+
+
+    <div id="wrap" class="wrapper">
+
         <section class="section welcome">
             <div class="container welcome--container">
                 <header class="header">
@@ -48,7 +53,7 @@
                         </svg>
                         8 800 903 90 90
                     </a>
-                    <a href="" class="nav__hamburger">
+                    <a id="ham" href="" class="nav__hamburger">
                         <svg class="hamburger__icon">
                             <use xlink:href="./sprite/sprite.svg#hamburger"></use>
                         </svg>
@@ -164,10 +169,10 @@
         </section>
         <section class="section bars">
             <div class="container bars--container">
-                <a href="" class="flash__slider flash__slider-left">
+                <a id="flash left" href="" class="flash__slider flash__slider-left">
                     <img src="./img/arrow-scroll_left.png" alt="" class="slider__left__icon">
                 </a>
-                <ul class="bars__slider">
+                <ul id="slider" class="bars__slider">
                     <li class="slider__bars-items slider__bars-items--active ">
 
                         <div class="bars__elips">
@@ -271,7 +276,7 @@
                         </div>
                     </li>
                 </ul>
-                <a href="" class="flash__slider flash__slider-right">
+                <a id="flash__right" href="" class="flash__slider flash__slider-right">
                     <img src="./img/arrow-scroll_right.png" alt="" class="slider__left__icon">
                 </a>
             </div>
@@ -474,7 +479,7 @@
         <section class="section delivery">
             <div class="container delivery--coontainer">
                 <h1 class="title delivery--title">ЗАКАЖИТЕ ДОСТАВКУ</h1>
-                <form method="POST" action="" class="form">
+                <form method="POST" action="" class="form" id="form">
                     <div class="form__left">
                         <div class="left__top">
                             <label class="left__top__name">
@@ -535,8 +540,9 @@
                             <span class="input__text">Не перезванивать</span>
                         </label>
                         <div class="button__delivery">
-                            <button type="button" class="content__btn content__btn-delivery">ЗАКАЗАТЬ</button>
-                            <a href="" class="btn__clear">Очистить</a>
+                            <button id="buttonDeliv" type="button"
+                                class="content__btn content__btn-delivery">ЗАКАЗАТЬ</button>
+                            <a id="btnClear" href="" class="btn__clear">Очистить</a>
                         </div>
 
                     </div>
@@ -615,8 +621,39 @@
                 <a href="" class="sidebar__link"></a>
             </li>
         </ul>
+        <div id="nav" class="navigation__tab">
+            <a id="closed" href="#" class="navigation__closed">
+                <svg  class="navigation__croix">
+                    <use xlink:href="./sprite/sprite.svg#croix"></use>
+                </svg>
+            </a>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">О нас</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Батончики</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Команда</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Меню</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Отзывы</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Как мы работаем</a>
+            </li>
+            <li class="navigation__items">
+                <a href="" class="navigation__link">Контакты</a>
+            </li>
+        </div>
     </div>
-
+    <script src="./script/script.js"></script>
+    <script src="./script/navigation-tab.js"></script>
 </body>
+
+
 
 </html>
