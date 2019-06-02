@@ -228,7 +228,8 @@
 }
 
 
-.team__items:active .team__name {
+.team__items--active .team__name {
+    transition: all .5s;
 
     &::after {
         content: "";
@@ -241,25 +242,26 @@
 }
 
 
-.team__items:active .team__descrip {
-    height: 5rem;
+.team__items--active .team__descrip {
+    height: 8rem;
     transition: 0.4s;
     width: 14rem;
+    transition: all .5s;
 
     @include phones {
         height: 6rem;
     }
 }
 
-.team__descrip--active {
+/*.team__descrip--active {
     height: 5rem;
 
     @include tablets {
         height: 0;
     }
-}
+}*/
 
-.team__descrip-tablet--active {
+/*.team__descrip-tablet--active {
     @include tablets {
         height: 5rem;
     }
@@ -267,4 +269,4 @@
     @include phones {
         height: 6rem;
     }
-}
+}*/

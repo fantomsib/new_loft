@@ -80,6 +80,7 @@
 
 .reviews__commit {
     display: flex;
+    //width: 100%;
     width: 58.75rem;
     height: 21.93rem;
     background-color: #f8faf9;
@@ -119,21 +120,46 @@
 
 .commit__items {
     display: flex;
+    width: 100%;
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
 
     @include tablets {
         flex-direction: column;
         align-items: center;
         text-align: center;
-
-
     }
+
+    @-webkit-keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+
+
+
 }
 
-.commit__items-1 {
-    @include tablets {
-        display: none;
-    }
-}
+
+
 
 .commit__personne {
     margin-right: 1.12rem;
@@ -215,21 +241,6 @@
     font-weight: 31.25rem;
 }
 
-.commit__items-2 {
-    display: none;
-    overflow: hidden;
-
-    @include tablets {
-        display: flex;
-    }
-}
-
-.commit__items-3 {
-    display: none;
-    overflow: hidden;
-}
-
-
 .reviews__list {
     display: flex;
     align-items: center;
@@ -266,24 +277,9 @@
 
 }
 
-.reviews__items--active,
-.reviews__items:active {
+.reviews__items--active {
     border: 0.5rem solid #0f5a47;
     border-radius: 50%;
     background-color: #0f5a47;
-
-    @include tablets {
-        border: 0;
-
-    }
-}
-
-.reviews__items-768,
-.reviews__items:active {
-    @include tablets {
-
-        border: 0.5rem solid #0f5a47;
-        border-radius: 50%;
-        background-color: #0f5a47;
-    }
+   
 }

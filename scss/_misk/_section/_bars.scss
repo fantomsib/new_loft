@@ -8,6 +8,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    height: 100%;
+
 
     @include tablets {
         flex-direction: column;
@@ -16,56 +18,78 @@
     }
 }
 
+
+.slider__wrrap {
+    width: 100%;
+    overflow: hidden;
+    align-items: center;
+    display: flex;
+    position: relative;
+
+    @include tablets {
+        height: 100%;
+
+    }
+}
+
+
 .bars__slider {
     display: flex;
     width: 100%;
+    transition: .4s;
+    //justify-content: space-around;
+
+    @include tablets {
+        align-items: center;
+    }
 }
 
 .slider__bars-items {
-    display: none;
-}
-
-.slider__bars-items--active {
+    transition: all 1s ease-in 0.4s;
+    width: 100%;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
-    width: 100%;
     justify-content: space-around;
+
+
 
     @include tablets {
         flex-direction: column;
     }
 }
 
-
-
 .flash__slider-left {
     position: absolute;
-    left: -1.5rem;
+    left: 0.25rem;
     z-index: 5;
+    top: 15.125rem;
 
     @include tablets {
-        top: 7.6875rem;
-        left: 9.1875rem;
+        top: 21rem;
+        left: 6rem;
     }
 
     @include phones {
-        left: 1rem;
-        top: 7rem;
+        left: 2rem;
+        top: 29rem;
     }
 }
 
 .flash__slider-right {
     position: absolute;
-    right: -0.5rem;
+    right: 0.25rem;
+    z-index: 5;
+    top: 15.125rem;
 
     @include tablets {
-        top: 7.6875rem;
-        right: 10rem;
+        top: 21rem;
+        right: 6rem;
     }
 
     @include phones {
-        right: 0.8rem;
-        top: 7rem;
+        right: 2rem;
+        top: 29rem;
     }
 }
 
@@ -80,6 +104,7 @@
 
     @include tablets {
         margin-bottom: 1.875rem;
+
     }
 
 
@@ -263,13 +288,6 @@
         @include btn;
     }
 }
-
-
-
-
-
-
-
 
 .chocolads {
     display: flex;
