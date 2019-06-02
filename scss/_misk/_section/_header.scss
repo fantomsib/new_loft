@@ -17,7 +17,7 @@
     width: 3.3125rem;
     height: 2.375rem;
 
-   
+
 }
 
 .header__phone {
@@ -62,7 +62,8 @@
     width: 1.625rem;
     height: 1.625rem;
     display: none;
-    &:hover{
+
+    &:hover {
         opacity: .55;
     }
 
@@ -73,6 +74,7 @@
 
 .header__chocco {
     display: flex;
+
     @include phones {
         width: 100%;
     }
