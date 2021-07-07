@@ -1,0 +1,102 @@
+.footer {
+    display: flex;
+    height: 5.8125rem;
+    background-color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+    @include phones {
+        height: 9.625rem;
+
+    }
+
+}
+
+.footer__row {
+    display: flex;
+    width: 50%;
+}
+
+/* Левая секция футора*/
+.footer__row-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include phones {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 0.625rem;
+    }
+}
+
+.footer__address {
+    color: #010101;
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 400;
+    line-height: 1.4888rem;
+    margin-bottom: 0.25rem;
+
+    @include phones {
+        margin-bottom: 0.5rem;
+    }
+}
+
+.footer__number {
+    font-family: "Alegreya Sans";
+    font-size: 1.3125rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    text-transform: uppercase;
+    color: #0f5a47;
+
+    &:hover {
+        opacity: 0.55;
+    }
+}
+
+.footer__tel {
+    width: 0.75rem;
+    height: 0.6875rem;
+    fill: #0f5a47;
+    margin-right: 0.4375rem;
+}
+
+/*правая секция футора*/
+.footer__row-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    @include phones {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.social {
+    display: inline;
+    margin-right: 1.25rem;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+}
+
+.vvk:hover {
+    fill: #010101;
+}

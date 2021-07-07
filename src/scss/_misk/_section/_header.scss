@@ -1,0 +1,82 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+ 
+  
+
+}
+
+.header__logo {
+    color: $colorWhiteText;
+    font-size: 1.5rem;
+    display: flex;
+    font-family: 'alegreya_sans_lightregular';
+    font-weight: bold;
+    line-height: 1.3125rem;
+    width: 3.3125rem;
+    height: 2.375rem;
+
+
+}
+
+.header__phone {
+    display: flex;
+    align-items: center;
+    color: $colorWhiteText;
+    font-family: "Alegreya Sans";
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    &::before {
+        content: "";
+        background: url("../sprite/sprite.svg");
+        background-position: 1.25rem 0.6875rem 1.875rem 1.25rem;
+        background-repeat: no-repeat;
+        display: flex;
+        margin-right: 0.375rem;
+        fill: black;
+        stroke: black;
+        stroke-width: 1;
+    }
+
+    &:hover {
+        opacity: 0.55;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}
+
+.header__tel {
+    width: 0.75rem;
+    height: 0.6875rem;
+    fill: #ffffff;
+    margin-right: 0.375rem;
+}
+
+
+.nav__hamburger {
+    width: 1.625rem;
+    height: 1.625rem;
+    display: none;
+
+    &:hover {
+        opacity: .55;
+    }
+
+    @include tablets {
+        display: flex;
+    }
+}
+
+.header__chocco {
+    display: flex;
+
+    @include phones {
+        width: 100%;
+    }
+}

@@ -1,0 +1,239 @@
+.why {
+    background-color: $white;
+    align-items: center;
+
+
+
+    @include tablets {
+        justify-content: center;
+
+        &::before {
+            top: 17.1875rem;
+        }
+
+        &::after {
+            bottom: -1.4375rem;
+        }
+    }
+
+    @include phones {
+        align-items: stretch;
+    }
+
+    &::before {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__bag.png") center center no-repeat;
+        bottom: 15.31rem;
+        left: 0;
+        width: 11.93rem;
+        height: 23.62rem;
+        max-width: 100%;
+
+        @include phones {
+            background: url("../img/bag-why-480.png") center center no-repeat;
+            top: 6.3125rem;
+            left: -6rem;
+            height: 24.0625rem;
+            width: 18.5625rem;
+        }
+    }
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__berry.png") center center no-repeat;
+        bottom: -6.25rem;
+        left: 0;
+        width: 10.06rem;
+        height: 22.68rem;
+        max-width: 100%;
+        z-index: 5;
+
+        @include tablets {
+            left: -23px;
+            bottom: -6.25rem;
+        }
+
+        @include phones {
+            background: url("../img/why-bars-480.png") center center no-repeat;
+            bottom: -103px;
+            left: -50px;
+        }
+    }
+}
+
+
+
+.why--container {
+    position: relative;
+    justify-content: center;
+
+    @include tablets {}
+
+    @include phones {
+
+        // justify-content: space-between;
+        padding-top: 2%;
+        padding-bottom: 5%;
+    }
+}
+
+.why__title-text {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5625rem;
+    @include tablets {
+        font-size: 20px;
+    }
+
+    @include phones {
+        margin-bottom: 0;
+
+    }
+}
+
+.why--title {
+    margin-bottom: 1.4375rem;
+
+    @include tablets {
+        margin-bottom: 0;
+    }
+
+    @include phones {
+        font-size: 1.5625rem;
+
+    }
+
+}
+
+.why__txt {
+    font-family: "Alegreya Sans";
+    display: flex;
+    align-self: center;
+    text-align: center;
+    // width: 406px;
+    width: 40%;
+
+    @include tablets {
+        font-size: 1.25rem;
+    }
+
+    @include phones {
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
+
+.why__list {
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    justify-content: space-between;
+
+    @include tablets {
+        flex-direction: column;
+    }
+
+    @include phones {
+        justify-content: space-around;
+        flex: 1;
+    }
+
+}
+
+.why__items {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+
+    @include tablets {
+        margin-bottom: 1rem;
+    }
+
+    @include phones {
+        width: 100%;
+        margin-bottom: 0rem;
+    }
+
+    span {
+        font-family: 'alegreya_sans_extraboldRg';
+        font-size: 1.68rem;
+        color: black;
+        margin-bottom: 0.4rem;
+
+        @include tablets {
+            margin-bottom: 0.2rem;
+        }
+
+        @include phones {
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+    }
+
+    p {
+        color: #666666;
+        font-family: "Alegreya Sans";
+        font-size: 1.125rem;
+        font-weight: 400;
+        font-weight: 18.75rem;
+        text-align: center;
+        width: 17.25rem;
+
+        @include phones {
+            font-size: 12px;
+            //width: 100%;
+        }
+    }
+
+
+    &::after {
+        content: "";
+        display: flex;
+        position: absolute;
+        background: url("../img/why__after.png") center center no-repeat;
+        width: 4.18rem;
+        height: 1.31rem;
+        right: -3.87rem;
+        top: 3.25rem;
+        max-width: 100%;
+
+        @include tablets {
+            display: none;
+        }
+    }
+
+    &:last-child::after {
+        display: none;
+    }
+}
+
+.why__icon {
+    display: flex;
+    width: 7.8125rem;
+    height: 7.8125rem;
+    background-color: #f2f5f4;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 2.18rem;
+
+    @include tablets {
+        margin-bottom: 0.8rem;
+    }
+
+    @include phones {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    .why__img {
+
+        max-width: 100%;
+    }
+}

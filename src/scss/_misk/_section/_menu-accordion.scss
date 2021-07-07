@@ -1,0 +1,124 @@
+.menu__list {
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 3;
+    padding: 0;
+    margin: 0;
+   //height: 100%;
+
+
+}
+
+.menu__items {
+    display: flex;
+    position: relative;
+   // height: 100%;
+
+
+
+}
+
+.menu__block {
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.75;
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .6s;
+
+}
+
+.menu__items--active .menu__block {
+    width: 33.125rem;
+
+    @include tablets {
+        // width: 0;
+    }
+
+    @include phones {
+        width: 17.65rem;
+
+    }
+}
+
+.menu__link {
+    position: relative;
+    display: flex;
+    width: 6.25rem;
+    height: 100%;
+    z-index: 2;
+
+    @include phones {
+        width: 3rem;
+    }
+
+    &::after {
+        position: absolute;
+        content: "";
+        display: flex;
+        background-color: #000000;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        opacity: .40;
+    }
+
+}
+
+.menu__link {
+    background: url("../img/menu__coco.jpg") center center no-repeat;
+    background-size: cover;
+
+
+}
+
+.menu__link-2 {
+    background: url("../img/menu__orang.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu__link-3 {
+    background: url("../img/menu__berry.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.menu__text {
+    display: flex;
+    width: 23.5rem;
+    height: 10rem;
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4981rem;
+    padding: 0.9375rem;
+}
+
+
+
+.menu__descrip {
+    position: absolute;
+    display: flex;
+    white-space: nowrap;
+    bottom: 0;
+    left: 50%;
+    transform-origin: 0 0;
+    transform: rotate(-90deg) translateY(-50%);
+    color: #ffffff;
+    font-family: "Alegreya Sans";
+    font-size: 3rem;
+    font-weight: 500;
+    // width: 2.5625rem;
+    z-index: 2;
+
+    @include phones {
+        font-size: 2rem;
+    }
+}
